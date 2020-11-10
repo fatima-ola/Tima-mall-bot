@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tima Mall</title>
+</head>
+<body>
+    <div class="container">  
+        <header >
+            <h1 id="mallName">TIMA MALL</h1>
+            <h3>Kindly fill out the form below for security entrance check</h3> 
+        </header>   
+        <form method="POST" onsubmit="">
+            <div class="form-control">
+                <label for="firstname">First Name:</label><br />
+                <input type="text" name="firstname" id="fname" required/><br />
+            </div>
+            <div class="form-control">
+                <label for="lastname">Last Name:</label><br />
+                <input type="text" name="lastname" id="lname" required/><br />
+            </div>
+            <div class="form-control">
+                <label for="maskon">Mask On:</label><br />
+                <input type="radio" name="answer" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" name="answer" value="no">
+                <label for="no">No</label>
+            </div>
+            <div class="form-control">
+                <label for="age">Age:</label><br />
+                <input type="number" name="age" id="age" required/>
+            </div>
+            <div class="form-control">
+                <h5>Visitors Allowed:<span id="allow"></span></h5>
+                <h5>Visitors Denied:<span id="deny"></span></h5>
+                <!-- <h5>Total Number of Visitors:<span id="totalVisitor"></span></h5> -->
+            </div>
+           <div id="btn">
+            <button  type="button"  onclick="getValue()">SHOP NOW</button>  
+           </div>      
+        </form>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
